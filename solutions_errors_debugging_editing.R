@@ -1,4 +1,4 @@
-# Errors, Debugging and Editing - Worksheet
+# Errors, Debugging and Editing - Solution Sheet
 
 # Setup Execution 
 ## This will use the function "source()" to run the separate R File "setup.R"
@@ -23,7 +23,7 @@ data <- read.csv(file = )
 # Error in read.csv(file = ) : argument "file" is missing, with no default
 
 # Solution: 
-
+data <- read.csv(file = "data/data_wales_education.csv")
 
 ## Chunk 1.2: Incomplete or unmatched parenthesis (brackets)
 data <- read.csv(file = "data/data_wales_education"))
@@ -31,7 +31,7 @@ data <- read.csv(file = "data/data_wales_education"))
 # Error: unexpected ')' in "data <- read.csv(file = "data/data_wales_education"))"
 
 # Solution: 
-
+data <- read.csv(file = "data/data_wales_education.csv")
 
 
 ## Chunk 1.3: Incorrect Location 
@@ -43,7 +43,7 @@ data <- read.csv(file = "data_wales_education")
 # cannot open file 'data_wales_education': No such file or directory
 
 # Solution: 
-
+data <- read.csv(file = "data/data_wales_education.csv")
 
 
 ## Exercise 2: For each of the Chunks, involving various different functions, 
@@ -56,7 +56,7 @@ summary()
 # argument "object" is missing, with no default
 
 # Solution 
-
+summary(data)
 
 ## Chunk 2.2: 
 if (ncol(data) > ) {
@@ -66,7 +66,9 @@ if (ncol(data) > ) {
 # Error: unexpected ')' in "if (ncol(data) > )"
 
 # Solution 
-
+if (ncol(data) > 10) {
+  print("Has more than 10 columns")
+}
 
 ## Chunk 2.3: 
 ncol(data 
@@ -75,6 +77,7 @@ ncol(data
 # Error: unexpected symbol in:....
 
 # Solution 
+ncol(data)
 
 
 ## Exercise 3: Using your knowledge from last session, solve these errors
@@ -85,7 +88,7 @@ chr_cols <- sapply(data, is-character)
 # Error in is - character : non-numeric argument to binary operator
 
 # Solution 
-
+chr_cols <- sapply(data, is.character)
 
 ## Chunk 3.2: 
 data[chr-cols] <- lapply(data[chr_cols], as,factor)
@@ -97,7 +100,7 @@ data[chr-cols] <- lapply(data[chr_cols], as,factor)
 # Error: object 'chr' not found
 
 # Solution 
-
+data[chr_cols] <- lapply(data[chr_cols], as.factor)
 
 ## Chunk 3.3:
 data_list_year >- split(data. data£Academic.year)
@@ -113,7 +116,7 @@ data_list_year >- split(data. data£Academic.year)
 # Error: object 'data_list_year' not found
 
 # Solution
-
+data_list_year <- split(data, data$Academic.year)
 
 
 # Section 2: Finding Solutions to Errors 
@@ -131,19 +134,32 @@ penguins_data <- penguins
 
 
 # Solution 
-
+ggplot(data = penguins_data, 
+       mapping = aes(x = bill_len, 
+                     y = bill_dep)) + 
+  geom_point()
 
 
 # Chunk 1.2: 
 # Developing the plot from Chunk 1.1, group Penguin species by colour 
 
 # Solution 
+ggplot(data = penguins_data, 
+       mapping = aes(x = bill_len, 
+                     y = bill_dep,
+                     colour = species)) + 
+  geom_point()
 
 # Chunk 1.3:
 # Developing the plot from 1.2, add a shape variable defining penguin sex. 
 
 # Solution 
-
+ggplot(data = penguins_data, 
+       mapping = aes(x = bill_len, 
+                     y = bill_dep,
+                     colour = species,
+                     shape = sex)) + 
+  geom_point()
 
 
 # Exercise 2: Conducting independent Research 
@@ -152,11 +168,15 @@ penguins_data <- penguins
 
 # Chunk 2.1: 
 # Create an faceted visualisation, creating a 3x3 visualisation, which groups: 
-# Penguin Sex, and species separately. 
-# With the overall aim to show individually penguins Bill Length and Depth by sex and species. 
+  # Penguin Sex, and species separately. 
+  # With the overall aim to show individually penguins Bill Length and Depth by sex and species. 
 
 # Solution 
-
+ggplot(data = penguins_data, 
+       mapping = aes(x = bill_len, 
+                     y = bill_dep)) + 
+  geom_point() + 
+  facet_grid(sex ~ species)
 
 
 # Chunk 2.2: 
@@ -164,5 +184,10 @@ penguins_data <- penguins
 # But also including a line of best fit (linear) - this should automatically be produced for the groups. 
 
 # Solution 
-
+ggplot(data = penguins_data, 
+       mapping = aes(x = body_mass, 
+                     y = flipper_len,
+                     colour = species)) + 
+  geom_point() + 
+  geom_smooth(formula = y ~ x, method = "lm")
 

@@ -13,7 +13,7 @@ editor: visual
 - Understand how to identify simple errors produced by R Scripts 
 - Understand how to interpret simple errors produced by R Scripts 
 - Understand how to find solutions for simple errors 
-- Understand how to edit code 
+- Understand how to edit code effectively 
 
 ## Today's Plan 
 
@@ -22,8 +22,7 @@ editor: visual
 - Worksheet Part 1: Identifying Errors & Addressing them 
 - Break 
 - Section 2: Finding Solutions to Errors 
-- Section 3: 
-- Worksheet Part 2: 
+- Worksheet Part 2: Finding Solutions and Applying Edits 
 
 # Questions from Last Week
 
@@ -111,4 +110,29 @@ We will cover these specifically next week!!
 - Add print/log statements
 - Make sure your code is commented and clear
 
+## Worksheet Part 2
 
+# Session Round Up
+
+## Session Objectives
+
+- Understand how to identify simple errors produced by R Scripts 
+- Understand how to interpret simple errors produced by R Scripts 
+- Understand how to find solutions for simple errors 
+- Understand how to edit code effectively 
+
+## Homework 
+
+- For those who code in R currently, bring to next weeks session an error: 
+  - You have recently solved, 
+  - You need help overcoming, 
+  - You have recently found
+  
+- And for everyone look at what R Code is currently within your working area and bring some (non-sensitive) scripts to next weeks session! 
+
+- As next week, we will be looking at good practice, so having some code which currently exists in your area/team will be an awesome place to start! 
+ 
+## Next Session
+
+-   Topic: Fundamentals of Good Practice
+-   May 12th 12:30-14:00
