@@ -1,0 +1,30 @@
+---
+title: "Errors, Debugging and Editing Code"
+author: "Thomas Wise"
+format: 
+  revealjs:
+    smaller: true
+    theme: dark
+editor: visual
+---
+
+## Session Objectives
+
+- Understand how to identify simple errors produced by R Scripts 
+- Understand how to interpret simple errors produced by R Scripts 
+- Understand how to find solutions for simple errors 
+- Understand how to edit code 
+
+## Today's Plan 
+
+- Review of Last Weeks Session (inc Homework)
+- Section 1: Structure of Errors 
+- Section 2: Types of Errors & Their Solutions 
+- Worksheet Part 1: Identifying Errors & Addressing them 
+- Break 
+- Section 3: Finding Solutions to Errors 
+- Section 4: 
+- Worksheet Part 2: 
+
+# Questions from Last Week
+
