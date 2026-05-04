@@ -350,23 +350,148 @@ Thomas Wise
 <h2>Today’s Plan</h2>
 <ul>
 <li>Review of Last Weeks Session (inc Homework)</li>
-<li>Section 1: Structure of Errors</li>
-<li>Section 2: Types of Errors &amp; Their Solutions</li>
+<li>Section 1: Types of Errors &amp; Their Solutions</li>
 <li>Worksheet Part 1: Identifying Errors &amp; Addressing them</li>
 <li>Break</li>
-<li>Section 3: Finding Solutions to Errors</li>
-<li>Section 4:</li>
+<li>Section 2: Finding Solutions to Errors</li>
+<li>Section 3:</li>
 <li>Worksheet Part 2:</li>
 </ul>
 </section>
 <section id="questions-from-last-week" class="title-slide slide level1 center">
 <h1>Questions from Last Week</h1>
+
+</section>
+
+<section>
+<section id="types-of-errors" class="title-slide slide level1 center">
+<h1>Types of Errors</h1>
+
+</section>
+<section id="rstudio-cues" class="slide level2">
+<h2>RStudio Cues</h2>
+<ul>
+<li>RStudio will highlight errors by:
+<ul>
+<li>Red Cross in a Circle (hovering over will expand the issue)</li>
+<li>Red Line under the specific issue in question (like spellchecker in word)</li>
+<li>Orange Line under specific issues which may be a problem</li>
+</ul></li>
+</ul>
+</section>
+<section id="errors-in-the-console" class="slide level2">
+<h2>Errors in the Console</h2>
+<ul>
+<li>When an error occurs, they will typically be structured
+<ul>
+<li><code>Error in [X] : [REASON]</code></li>
+</ul></li>
+<li>For example, for the call:
+<ul>
+<li><code>summary()</code></li>
+<li>Here we have left out any argument in the summary function</li>
+<li><code>Error in summary.default() : argument "object" is missing, with no default</code></li>
+</ul></li>
+<li>There may also be additional warning messages:
+<ul>
+<li><code>In addition: Warning message: [DETAIL]</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="common-error-types" class="slide level2">
+<h2>Common Error Types</h2>
+<ul>
+<li>Syntax Errors
+<ul>
+<li>Unexpected amount of punctuation (too many)</li>
+<li>Unexpected amount of punctuation (to few)**</li>
+<li>Incomplete or missing argument</li>
+</ul></li>
+<li>Incomplete connections
+<ul>
+<li>File, source or content is not in the right place!</li>
+</ul></li>
+</ul>
+<p>NOTE: when there is not enough punctuation, this can result in no error triggers, rather just a hanging <code>&gt;</code> and will proceed no further.</p>
+</section>
+<section id="less-common-error-types" class="slide level2">
+<h2>Less Common Error Types</h2>
+<ul>
+<li><p>These commonly occur during the implementation of code, after a system is deployed.</p></li>
+<li><p>Logical, Arithmetic or Runtime Errors</p>
+<ul>
+<li>These result from errors internally, such as:</li>
+<li>Dividing by zero</li>
+<li>Missing Internal Packages</li>
+<li>Incorrect usage by users</li>
+</ul></li>
+<li><p>Linker or Resource Errors</p>
+<ul>
+<li>These result from internal system errors, such as inadequate system resources, or failures in the internal links</li>
+</ul></li>
+</ul>
+</section>
+<section id="overcoming-errors" class="slide level2">
+<h2>Overcoming Errors</h2>
+<ul>
+<li>Read the error message presented (usually it highlights the problem!)</li>
+<li>Utilise the debugger in RStudio</li>
+<li>Isolate the problem, understanding what contributes to that function/line</li>
+<li>Ask for help!</li>
+</ul>
+</section></section>
+<section id="worksheet-part-1" class="title-slide slide level1 center">
+<h1>Worksheet Part 1</h1>
+
+</section>
+
+<section id="break" class="title-slide slide level1 center">
+<h1>Break</h1>
+
+</section>
+
+<section>
+<section id="finding-solutions-to-errors" class="title-slide slide level1 center">
+<h1>Finding Solutions to Errors</h1>
+
+</section>
+<section id="sources-of-information" class="slide level2">
+<h2>Sources of Information</h2>
+<ul>
+<li>Colleagues &amp; Asking for help</li>
+<li>Google:
+<ul>
+<li>Stack Overflow</li>
+<li>Forums</li>
+</ul></li>
+<li>Literature or Manuals
+<ul>
+<li>R Helper function: <code>?</code></li>
+<li>Help Tab (to understand the functions more)</li>
+<li>Specific Literature or guidance (such as R4DS)</li>
+</ul></li>
+<li>AI
+<ul>
+<li>AI is best used for targeted support, such as single lines of code or issues</li>
+<li>Be warned, AI does not understand the context of your error!</li>
+<li>Be sure to review your departments AI policy before usage</li>
+</ul></li>
+</ul>
+</section>
+<section id="reducing-error-risk" class="slide level2">
+<h2>Reducing Error Risk</h2>
+<p>We will cover these specifically next week!!</p>
+<ul>
+<li>Work and test in small increments</li>
+<li>Add print/log statements</li>
+<li>Make sure your code is commented and clear</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

@@ -18,13 +18,97 @@ editor: visual
 ## Today's Plan 
 
 - Review of Last Weeks Session (inc Homework)
-- Section 1: Structure of Errors 
-- Section 2: Types of Errors & Their Solutions 
+- Section 1: Types of Errors & Their Solutions 
 - Worksheet Part 1: Identifying Errors & Addressing them 
 - Break 
-- Section 3: Finding Solutions to Errors 
-- Section 4: 
+- Section 2: Finding Solutions to Errors 
+- Section 3: 
 - Worksheet Part 2: 
 
 # Questions from Last Week
+
+# Types of Errors 
+
+## RStudio Cues 
+
+- RStudio will highlight errors by: 
+  - Red Cross in a Circle (hovering over will expand the issue)
+  - Red Line under the specific issue in question (like spellchecker in word)
+  - Orange Line under specific issues which may be a problem
+  
+## Errors in the Console 
+
+- When an error occurs, they will typically be structured
+  - `Error in [X] : [REASON]`
+- For example, for the call: 
+  - `summary()` 
+  - Here we have left out any argument in the summary function 
+  - `Error in summary.default() : argument "object" is missing, with no default`
+  
+- There may also be additional warning messages: 
+  - `In addition: Warning message: [DETAIL]`
+
+## Common Error Types 
+
+- Syntax Errors
+  - Unexpected amount of punctuation (too many)
+  - Unexpected amount of punctuation (to few)**
+  - Incomplete or missing argument 
+  
+- Incomplete connections 
+  - File, source or content is not in the right place! 
+  
+NOTE: when there is not enough punctuation, this can result in no error triggers, rather just a hanging `>` and will proceed no further. 
+
+## Less Common Error Types 
+
+- These commonly occur during the implementation of code, after a system is deployed.
+
+- Logical, Arithmetic or Runtime Errors
+  - These result from errors internally, such as: 
+  - Dividing by zero 
+  - Missing Internal Packages 
+  - Incorrect usage by users
+  
+- Linker or Resource Errors
+  - These result from internal system errors, such as inadequate system resources, or failures in the internal links
+
+## Overcoming Errors
+
+- Read the error message presented (usually it highlights the problem!)
+- Utilise the debugger in RStudio 
+- Isolate the problem, understanding what contributes to that function/line
+- Ask for help!
+
+# Worksheet Part 1
+
+# Break
+
+# Finding Solutions to Errors 
+
+## Sources of Information 
+
+- Colleagues & Asking for help 
+- Google: 
+  - Stack Overflow 
+  - Forums 
+- Literature or Manuals 
+  - R Helper function: `?`
+  - Help Tab (to understand the functions more)
+  - Specific Literature or guidance (such as R4DS)
+  
+- AI 
+  - AI is best used for targeted support, such as single lines of code or issues
+  - Be warned, AI does not understand the context of your error! 
+  - Be sure to review your departments AI policy before usage
+
+
+## Reducing Error Risk
+
+We will cover these specifically next week!! 
+
+- Work and test in small increments 
+- Add print/log statements
+- Make sure your code is commented and clear
+
 
